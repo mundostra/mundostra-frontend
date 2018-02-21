@@ -8,6 +8,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 import com.aws.codestar.projecttemplates.controller.HelloWorldController;
+import com.aws.codestar.projecttemplates.controller.MainController;
 
 /**
  * Spring configuration for sample application.
@@ -27,6 +28,7 @@ public class ApplicationConfig {
     public HelloWorldController helloWorld() {
         return new HelloWorldController(this.siteName);
     }
+    
 
     /**
      * Required to inject properties using the 'Value' annotation.
