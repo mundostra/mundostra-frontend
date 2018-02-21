@@ -41,6 +41,8 @@ artifacts:
     - 'ROOT/WEB-INF/lib/spring-webmvc-4.3.14.RELEASE.jar'
     - 'ROOT/WEB-INF/views/index.jsp'
     - 'ROOT/resources/**'
+    - 'ROOT/resources/img/portfolio/*'
+    - 'ROOT/resources/img/portfolio/header1.jpg'
     - 'ROOT/resources/set-background.js'
     - 'ROOT/resources/styles.css'
     - 'ROOT/resources/tweet.svg'
