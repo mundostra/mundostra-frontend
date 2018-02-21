@@ -12,19 +12,45 @@
 
     <title>Mundostra</title>
 
+
+    <!-- Loading all Resources -->
+    <spring:url value="/resources/vendor/bootstrap/css/bootstrap.min.css" var="bootstrapCss" />
+    <spring:url value="/resources/vendor/font-awesome/css/font-awesome.min.css" var="font-awesomeCss" />
+    <spring:url value="/resources/vendor/magnific-popup/magnific-popup.css" var="magnific-popupCss" />
+    <spring:url value="/resources/css/creative.min.css" var="creativeCss" />
+    <spring:url value="/resources/img/portfolio/fullsize/1.jpg" var="1FJpg" />
+    <spring:url value="/resources/img/portfolio/thumbnails/1.jpg" var="1TJpg" />
+    <spring:url value="/resources/img/portfolio/fullsize/2.jpg" var="2FJpg" />
+    <spring:url value="/resources/img/portfolio/thumbnails/2.jpg" var="2TJpg" />
+    <spring:url value="/resources/img/portfolio/fullsize/3.jpg" var="3FJpg" />
+    <spring:url value="/resources/img/portfolio/thumbnails/3.jpg" var="3TJpg" />
+    <spring:url value="/resources/img/portfolio/fullsize/4.jpg" var="4FJpg" />
+    <spring:url value="/resources/img/portfolio/thumbnails/4.jpg" var="4TJpg" />
+    <spring:url value="/resources/img/portfolio/fullsize/5.jpg" var="5FJpg" />
+    <spring:url value="/resources/img/portfolio/thumbnails/5.jpg" var="5TJpg" />
+    <spring:url value="/resources/img/portfolio/fullsize/6.jpg" var="6FJpg" />
+    <spring:url value="/resources/img/portfolio/thumbnails/6.jpg" var="6TJpg" />
+    <spring:url value="/resources/vendor/jquery/jquery.min.js" var="jqueryJs" />
+    <spring:url value="/resources/vendor/bootstrap/js/bootstrap.bundle.min.js" var="bootstrapBundleJs" />
+    <spring:url value="/resources/vendor/jquery-easing/jquery.easing.min.js" var="jqueryEasingJs" />
+    <spring:url value="/resources/vendor/scrollreveal/scrollreveal.min.js" var="scrollRevealJs" />
+    <spring:url value="/resources/vendor/magnific-popup/jquery.magnific-popup.min.js" var="magnificPopupJs" />
+    <spring:url value="/resources/js/creative.min.js" var="creativeJs" />
+
+
     <!-- Bootstrap core CSS -->
-    <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${bootstrapCss}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="resources/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="${font-awesomeCss}" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
-    <link href="resources/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="${magnific-popupCss}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="resources/css/creative.min.css" rel="stylesheet">
+    <link href="${creativeCss}" rel="stylesheet">
 
   </head>
 
@@ -134,8 +160,8 @@
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="resources/img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="resources/img/portfolio/thumbnails/1.jpg" alt="">
+            <a class="portfolio-box" href="${1FJpg}">
+              <img class="img-fluid" src="${1TJpg}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -149,8 +175,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="resources/img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="resources/img/portfolio/thumbnails/2.jpg" alt="">
+            <a class="portfolio-box" href="${2FJpg}">
+              <img class="img-fluid" src="${2TJpg}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -164,8 +190,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="resources/img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="resources/img/portfolio/thumbnails/3.jpg" alt="">
+            <a class="portfolio-box" href="${3FJpg}">
+              <img class="img-fluid" src="${3TJpg}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -179,8 +205,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="resources/img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="resources/img/portfolio/thumbnails/4.jpg" alt="">
+            <a class="portfolio-box" href="${4FJpg}">
+              <img class="img-fluid" src="${4TJpg}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -194,8 +220,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="resources/img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="resources/img/portfolio/thumbnails/5.jpg" alt="">
+            <a class="portfolio-box" href="${5FJpg}">
+              <img class="img-fluid" src="${5TJpg}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -209,8 +235,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="resources/img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="resources/img/portfolio/thumbnails/6.jpg" alt="">
+            <a class="portfolio-box" href="${6FJpg}">
+              <img class="img-fluid" src="${6TJpg}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -256,17 +282,16 @@
       </div>
     </footer>
     <!-- Bootstrap core JavaScript -->
-    <script src="resources/vendor/jquery/jquery.min.js"></script>
-    <script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="${jqueryJs}"></script>
+    <script src="${bootstrapBundleJs}"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="resources/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="resources/vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="${jqueryEasingJs}"></script>
+    <script src="${scrollRevealJs}"></script>
+    <script src="${magnificPopupJs}"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="resources/js/creative.min.js"></script>
-
+    <script src="${creativeJs}"></script>
   </body>
 
 </html>
