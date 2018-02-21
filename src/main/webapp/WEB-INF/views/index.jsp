@@ -18,18 +18,18 @@
     <spring:url value="/resources/vendor/font-awesome/css/font-awesome.min.css" var="font-awesomeCss" />
     <spring:url value="/resources/vendor/magnific-popup/magnific-popup.css" var="magnific-popupCss" />
     <spring:url value="/resources/css/creative.min.css" var="creativeCss" />
-    <spring:url value="/resources/img/portfolio/fullsize/1.jpg" var="1FJpg" />
-    <spring:url value="/resources/img/portfolio/thumbnails/1.jpg" var="1TJpg" />
-    <spring:url value="/resources/img/portfolio/fullsize/2.jpg" var="2FJpg" />
-    <spring:url value="/resources/img/portfolio/thumbnails/2.jpg" var="2TJpg" />
-    <spring:url value="/resources/img/portfolio/fullsize/3.jpg" var="3FJpg" />
-    <spring:url value="/resources/img/portfolio/thumbnails/3.jpg" var="3TJpg" />
-    <spring:url value="/resources/img/portfolio/fullsize/4.jpg" var="4FJpg" />
-    <spring:url value="/resources/img/portfolio/thumbnails/4.jpg" var="4TJpg" />
-    <spring:url value="/resources/img/portfolio/fullsize/5.jpg" var="5FJpg" />
-    <spring:url value="/resources/img/portfolio/thumbnails/5.jpg" var="5TJpg" />
-    <spring:url value="/resources/img/portfolio/fullsize/6.jpg" var="6FJpg" />
-    <spring:url value="/resources/img/portfolio/thumbnails/6.jpg" var="6TJpg" />
+    <spring:url value="/resources/img/portfolio/fullsize/1.jpg" var="oneFJpg" />
+    <spring:url value="/resources/img/portfolio/thumbnails/1.jpg" var="oneTJpg" />
+    <spring:url value="/resources/img/portfolio/fullsize/2.jpg" var="twoFJpg" />
+    <spring:url value="/resources/img/portfolio/thumbnails/2.jpg" var="twoTJpg" />
+    <spring:url value="/resources/img/portfolio/fullsize/3.jpg" var="threeFJpg" />
+    <spring:url value="/resources/img/portfolio/thumbnails/3.jpg" var="threeTJpg" />
+    <spring:url value="/resources/img/portfolio/fullsize/4.jpg" var="fourFJpg" />
+    <spring:url value="/resources/img/portfolio/thumbnails/4.jpg" var="fourTJpg" />
+    <spring:url value="/resources/img/portfolio/fullsize/5.jpg" var="fiveFJpg" />
+    <spring:url value="/resources/img/portfolio/thumbnails/5.jpg" var="fiveTJpg" />
+    <spring:url value="/resources/img/portfolio/fullsize/6.jpg" var="sixFJpg" />
+    <spring:url value="/resources/img/portfolio/thumbnails/6.jpg" var="sixTJpg" />
     <spring:url value="/resources/vendor/jquery/jquery.min.js" var="jqueryJs" />
     <spring:url value="/resources/vendor/bootstrap/js/bootstrap.bundle.min.js" var="bootstrapBundleJs" />
     <spring:url value="/resources/vendor/jquery-easing/jquery.easing.min.js" var="jqueryEasingJs" />
@@ -160,8 +160,8 @@
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="${1FJpg}">
-              <img class="img-fluid" src="${1TJpg}" alt="">
+            <a class="portfolio-box" href="${oneFJpg}">
+              <img class="img-fluid" src="${oneTJpg}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -175,8 +175,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="${2FJpg}">
-              <img class="img-fluid" src="${2TJpg}" alt="">
+            <a class="portfolio-box" href="${twoFJpg}">
+              <img class="img-fluid" src="${twoTJpg}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -190,8 +190,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="${3FJpg}">
-              <img class="img-fluid" src="${3TJpg}" alt="">
+            <a class="portfolio-box" href="${threeFJpg}">
+              <img class="img-fluid" src="${threeTJpg}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -205,8 +205,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="${4FJpg}">
-              <img class="img-fluid" src="${4TJpg}" alt="">
+            <a class="portfolio-box" href="${fourFJpg}">
+              <img class="img-fluid" src="${fourTJpg}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -220,8 +220,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="${5FJpg}">
-              <img class="img-fluid" src="${5TJpg}" alt="">
+            <a class="portfolio-box" href="${fiveFJpg}">
+              <img class="img-fluid" src="${fiveTJpg}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -235,8 +235,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="${6FJpg}">
-              <img class="img-fluid" src="${6TJpg}" alt="">
+            <a class="portfolio-box" href="${sixFJpg}">
+              <img class="img-fluid" src="${sixTJpg}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
