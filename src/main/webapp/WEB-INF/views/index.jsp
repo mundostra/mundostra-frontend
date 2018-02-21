@@ -15,8 +15,8 @@
 
     <!-- Loading all Resources -->
     <spring:url value="/resources/vendor/bootstrap/css/bootstrap.min.css" var="bootstrapCss" />
-    <spring:url value="/resources/vendor/font-awesome/css/font-awesome.min.css" var="font-awesomeCss" />
-    <spring:url value="/resources/vendor/magnific-popup/magnific-popup.css" var="magnific-popupCss" />
+    <spring:url value="/resources/vendor/font-awesome/css/font-awesome.min.css" var="fontAwesomeCss" />
+    <spring:url value="/resources/vendor/magnific-popup/magnific-popup.css" var="magnificPopupCss" />
     <spring:url value="/resources/css/creative.min.css" var="creativeCss" />
     <spring:url value="/resources/img/portfolio/fullsize/1.jpg" var="oneFJpg" />
     <spring:url value="/resources/img/portfolio/thumbnails/1.jpg" var="oneTJpg" />
@@ -42,12 +42,12 @@
     <link href="${bootstrapCss}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="${font-awesomeCss}" rel="stylesheet">
+    <link href="${fontAwesomeCss}" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
-    <link href="${magnific-popupCss}" rel="stylesheet">
+    <link href="${magnificPopupCss}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="${creativeCss}" rel="stylesheet">
