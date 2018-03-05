@@ -72,7 +72,7 @@
               <a class="nav-link js-scroll-trigger" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Itenary</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -104,10 +104,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">We've got what you need!</h2>
-            <hr class="light my-4">
-            <p class="text-faded mb-4">Introduction</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+              <h2 class="section-heading text-white">Are you ready to see the world <br>Your Way, Your Style?</h2>
+              <hr class="light my-4">
+              <p class="text-faded mb-4">Mundostra, Inc. <sup><i>*</i></sup>  is all about making your travel easy and enjoyable. You just need to tell us what your heart desires and pack your bags! We will do all the hard work for you.<br><br>Our mission is to take care of the logistics of your trip: your bookings, personal preferences on stay, food, tours and anything else you need.<br><br>What more? We will be in touch with you as frequently as you want us to - so we can make sure you are in safe hands from the moment you leave your home and return rejuvenated. All we ask from you is to help us know you a little better so we can make your itineraries, 100% customized to your preferences.
+              <br><br>
+                </p>
+              <a class="btn btn-light btn-xl js-scroll-trigger" href="../signup.html">Get Started!</a>
           </div>
         </div>
       </div>
@@ -127,8 +129,8 @@
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Customized Itenary</h3>
-              <p class="text-muted mb-0">Based on your requirements we'll create a customized itenary for you.</p>
+              <h3 class="mb-3">Customized Itinerary</h3>
+              <p class="text-muted mb-0">Based on your requirements we'll create a customized itinerary for you.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
@@ -148,7 +150,7 @@
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Service 3</h3>
+              <h3 class="mb-3">Tours</h3>
               <p class="text-muted mb-0"></p>
             </div>
           </div>
@@ -257,21 +259,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
-            <hr class="my-4">
-            <p class="mb-5">Have questions? Give us a call or send us an email and we will get back to you as soon as possible!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-phone fa-3x mb-3 text-primary sr-contact"></i>
-            <p>123-456-6789</p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x mb-3 text-primary sr-contact"></i>
-            <p>
-              <a href="mailto:your-email@your-domain.com">info@mundostra.com</a>
-            </p>
+              <h2 class="section-heading">Let's Get In Touch!</h2>
+              <hr class="my-4">
+              <p class="mb-5">*Mundostra is at a private - beta phase right now. We are still work in progress. Please feel free to leave us feedback at support@mundostra.com</p><br>
+              <i class="fa fa-envelope-o fa-3x mb-3 text-primary sr-contact"></i>
+              <p>
+                <a href="mailto:your-email@your-domain.com">support@mundostra.com</a>
+              </p>
           </div>
         </div>
       </div>
