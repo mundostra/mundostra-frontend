@@ -25,4 +25,11 @@ public class HelloWorldController {
         return mav;
     }
 
+    @RequestMapping(value = "/signup", method = RequestMethod.GET)
+    public ModelAndView signup() {
+        ModelAndView mav = new ModelAndView("signup");
+        mav.addObject("siteName", this.siteName);
+        return mav;
+    }
+
 }
