@@ -35,7 +35,7 @@ public class HelloWorldController {
 
     @RequestMapping(value = "/signup", method = RequestMethod.POST)
     public RedirectView saveSignupDetails() {
-        return new RedirectView("/mundostra/questionnaire");
+        return new RedirectView("/questionnaire");
     }
 
     @RequestMapping(value = "/questionnaire", method = RequestMethod.GET)
