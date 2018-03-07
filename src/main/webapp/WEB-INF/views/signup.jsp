@@ -32,23 +32,13 @@
     <div id="login-box">
       <div class="left">
         <h1>Sign up</h1>
-
-        <input type="text" name="firstname" placeholder="First Name" />
-         <input type="text" name="lastname" placeholder="Last Name" />
-        <input type="text" name="email" placeholder="E-mail" />
-        <input type="text" name="number" placeholder="Number" />
-        <!--<input type="password" name="password" placeholder="Password" />
-        <input type="password" name="password2" placeholder="Retype password" /> -->
-
-        <input type="submit" name="signup_submit" value="Sign me up" />
+        <form action="/mundostra/signup" method="post">
+            <input type="text" name="firstname" placeholder="First Name" />
+             <input type="text" name="lastname" placeholder="Last Name" />
+            <input type="text" name="email" placeholder="E-mail" />
+            <input type="text" name="number" placeholder="Number" />
+            <input type="submit" name="signup_submit" value="Sign me up" />
+        </form>
       </div>
-
-      <div class="right">
-        <span class="loginwith">Sign in with<br />social network</span>
-
-        <button class="social-signin facebook">Log in with facebook</button>
-        <button class="social-signin google">Log in with Google+</button>
-      </div>
-      <div class="or">OR</div>
     </div>
 </body>

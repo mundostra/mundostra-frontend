@@ -1,2 +1,6 @@
 /target/
 .idea
+.settings/org.eclipse.m2e.core.prefs
+HelloWorld.iml
+HelloWorld.ipr
+HelloWorld.iws
