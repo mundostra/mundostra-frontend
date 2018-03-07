@@ -32,7 +32,7 @@
     <div id="login-box">
       <div class="left">
         <h1>Sign up</h1>
-        <form action="/mundostra/signup" method="post">
+        <form action="/signup" method="post">
             <input type="text" name="firstname" placeholder="First Name" />
              <input type="text" name="lastname" placeholder="Last Name" />
             <input type="text" name="email" placeholder="E-mail" />
