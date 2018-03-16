@@ -33,9 +33,9 @@
       <div class="left">
         <h1>Sign up</h1>
         <form action="/signup" method="post">
-            <input type="text" name="firstname" placeholder="First Name" />
-             <input type="text" name="lastname" placeholder="Last Name" />
-            <input type="text" name="email" placeholder="E-mail" />
+            <input type="text" name="first_name" placeholder="First Name" required/>
+            <input type="text" name="last_name" placeholder="Last Name" required/>
+            <input type="text" name="email" placeholder="E-mail" required/>
             <input type="text" name="number" placeholder="Number" />
             <input type="submit" name="signup_submit" value="Sign me up" />
         </form>
