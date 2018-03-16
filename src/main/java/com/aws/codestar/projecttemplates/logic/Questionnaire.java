@@ -20,7 +20,7 @@ public class Questionnaire {
         try {
             stmt = db_connection.createStatement();
         } catch(Exception e){
-
+            
         }
     }
 
@@ -46,7 +46,7 @@ public class Questionnaire {
             statement.close();
             return "success";
         } catch(Exception e) {
-            return "fail";
+            return e.toString();
         }
 
     }

@@ -42,8 +42,12 @@ public class HelloWorldController {
     @RequestMapping(value = "/signup", method = RequestMethod.POST)
     public RedirectView saveSignupDetails(@RequestParam Map<String,String> signupDetails, RedirectAttributes redirectAttributes) {
         UserSignup signup = new UserSignup();
-        signup.saveUser(signupDetails);
+        String response = signup.saveUser(signupDetails);
         redirectAttributes.addFlashAttribute("email", signupDetails.get("email"));
+        if(!response.equalsIgnoreCase("success")) {
+            redirectAttributes.addFlashAttribute("error", response);
+            return new RedirectView("/error");
+        }
         return new RedirectView("/questionnaire");
     }
 
@@ -57,9 +61,21 @@ public class HelloWorldController {
     @RequestMapping(value = "/questionnaire", method = RequestMethod.POST)
     public RedirectView saveQuestionnaire(@RequestParam Map<String,String> questionnaireData,
                                           @RequestParam(value = "stay_preference") String[] stay_preferences,
-                                          @RequestParam(value = "age_group") String[] age_groups) {
+                                          @RequestParam(value = "age_group") String[] age_groups,
+                                          RedirectAttributes redirectAttributes) {
         Questionnaire questionnaire = new Questionnaire();
-        questionnaire.saveQuestionnaire(questionnaireData, age_groups, stay_preferences);
+        String response = questionnaire.saveQuestionnaire(questionnaireData, age_groups, stay_preferences);
+        if(!response.equalsIgnoreCase("success")) {
+            redirectAttributes.addFlashAttribute("error", response);
+            return new RedirectView("/error");
+        }
         return new RedirectView("/");
+    }
+
+    @RequestMapping(value = "/error", method = RequestMethod.GET)
+    public ModelAndView getErrorPage() {
+        ModelAndView mav = new ModelAndView("error");
+        mav.addObject("siteName", this.siteName);
+        return mav;
     }
 }

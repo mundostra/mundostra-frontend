@@ -1,7 +1,10 @@
 package com.aws.codestar.projecttemplates.logic;
 
 import com.aws.codestar.projecttemplates.database.Driver;
+import com.sun.deploy.net.HttpResponse;
 
+import javax.xml.ws.Response;
+import javax.xml.ws.http.HTTPException;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -45,7 +48,7 @@ public class UserSignup {
             statement.close();
             return "success";
         } catch(Exception e) {
-            return "fail";
+            return e.toString();
         }
 
     }
