@@ -11,34 +11,63 @@
     <meta name="author" content="">
 
     <title>Mundostra</title>
-    <spring:url value="/resources/vendor/bootstrap/css/bootstrap.min.css" var="bootstrapCss" />
+
     <spring:url value="/resources/css/style.min.css" var="styleCss" />
     <spring:url value="/resources/vendor/font-awesome/css/font-awesome.min.css" var="fontAwesomeCss" />
-    <spring:url value="/resources/vendor/magnific-popup/magnific-popup.css" var="magnificPopupCss" />
-
-    <!-- Custom fonts for this template -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Custom styles for this template -->
-    <link href="${magnificPopupCss}" rel="stylesheet">
-    <link href="${bootstrapCss}" rel="stylesheet">
     <link href="${styleCss}" rel="stylesheet">
     <link href="${fontAwesomeCss}" rel="stylesheet">
 
 </head>
 <body>
-    <div id="login-box">
-      <div class="left">
-        <h1>Sign up</h1>
-        <form action="/signup" method="post">
-            <input type="text" name="first_name" placeholder="First Name" required/>
-            <input type="text" name="last_name" placeholder="Last Name" required/>
-            <input type="text" name="email" placeholder="E-mail" required/>
-            <input type="text" name="number" placeholder="Number" />
-            <input type="submit" name="signup_submit" value="Sign me up" />
-        </form>
-      </div>
-    </div>
+    <div class="container" id="login-box">
+        <ul class="nav nav-pills nav-justified">
+          <li class="active"><a data-toggle="pill" href="#signup">Sign Up</a></li>
+          <li><a data-toggle="pill" href="#login">Log In</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="signup" class="tab-pane fade in active">
+                <br/>
+                <h1>Sign Up</h1>
+                <form >
+                    <div class="top-row">
+                        <div class="field-wrap">
+                          <input type="text" name="firstname" required autocomplete="off" placeholder="First Name" />
+                        </div>
+                        <div class="field-wrap">
+                          <input type="text" name="lastname" required autocomplete="off" placeholder="Last Name"/>
+                        </div>
+                    </div>
+                    <div class="field-wrap">
+                        <input type="number" name="number" required autocomplete="off" placeholder="Phone Number"/>
+                    </div>
+                    <div class="field-wrap">
+                        <input type="email" name="email" required autocomplete="off" placeholder="Email Address"/>
+                    </div>
+                    <div class="field-wrap">
+                        <input type="password" name="password" required autocomplete="off" placeholder="Password"/>
+                    </div>    <br/>
+                    <button type="submit" class="button button-block">Get Started</button>
+                </form>
+            </div>
+            <div id="login" class="tab-pane fade">
+                <br/>
+                <h1>Welcome Back!</h1>
+                <form>
+                    <div class="field-wrap">
+                       <input type="email" name="email" required autocomplete="off" placeholder="Email Address"/>
+                    </div>
+                    <div class="field-wrap">
+                        <input type="password" name="password" required autocomplete="off" placeholder="Password"/>
+                    </div>
+                    <p class="forgot"><a href="#">Forgot Password?</a></p>
+                    <button type="submit" class="button button-block">Log In</button>
+                </form>
+            </div>
+        </div><!-- tab-content -->
+    </div> <!-- /form -->
 </body>

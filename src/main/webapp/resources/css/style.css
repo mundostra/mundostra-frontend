@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background: #DDD;
-  font-size: 16px;
+  font-size: 20px;
   color: #222;
   font-weight: 300;
   font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
@@ -18,8 +18,9 @@ body {
   position: relative;
   top: 15%;
   margin: 5% auto;
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 600px;
+  padding: 10px;
   background: #FFF;
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -32,10 +33,13 @@ h1 {
   text-align: center;
   font-weight: 300;
   font-size: 28px;
-  text-decoration-color:#1b5460;
+  text-transform: uppercase;
+  color:#1b5460;
 }
 
 input[type="text"],
+input[type="number"],
+input[type="email"],
 input[type="password"] {
   display: block;
   box-sizing: border-box;
@@ -43,27 +47,30 @@ input[type="password"] {
   margin-right:40px;
   margin-top:30px;
   padding: 4px;
-  width: 220px;
+  width: 300px;
   height: 32px;
   border: none;
   border-bottom: 1px solid #AAA;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   transition: 0.2s ease;
 }
 
 input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
 input[type="password"]:focus {
   border-bottom: 2px solid #16a085;
   color: #16a085;
   transition: 0.2s ease;
 }
 
-input[type="submit"] {
+button[type="submit"] {
+  display: block;
   margin: 28px;
   margin-left:90px;
-  width: 120px;
+  width: 200px;
   height: 32px;
   background: #16a085;
   border: none;
@@ -76,16 +83,30 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover,
-input[type="submit"]:focus {
+button[type="submit"]:hover,
+button[type="submit"]:focus {
   opacity: 0.8;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   transition: 0.1s ease;
 
 }
 
-input[type="submit"]:active {
+button[type="submit"]:active {
   opacity: 1;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   transition: 0.1s ease;
+}
+
+p.forgot{
+  font-size: 12px;
+  margin-left: 40px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff !important;
+    background-color: #1b5460 !important;
+}
+a{
+  color:#1b5460 !important;
+  text-decoration:none !important;
 }
