@@ -3,7 +3,7 @@ body, html {
     height: 100%}
 body {
     font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
-    background-image: url(../img/header1.jpg);
+    background-image: url(../img/header1.png);
 }
 hr {
     max-width: 50px;
@@ -43,7 +43,7 @@ a:hover {
     width:800px;
     padding: 10px;
     box-sizing: border-box;
-    border-radius: 20px 0 20px 0;
+    border-radius: 0px 0 0px 0;
     cursor: pointer;
     transform-style: preserve-3d;
     background: -webkit-linear-gradient(top left, rgba(221, 222, 209,1) 50%, rgba(27, 84, 96,1) 50%);

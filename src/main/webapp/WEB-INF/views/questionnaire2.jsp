@@ -33,12 +33,9 @@
 <body>
     <div class="container h-100">
         <div class="row h-100 justify-content-center align-items-center">
-            <form class="col-6" id="questionnaire" action="/questionnaire" method="post">
+            <form class="col-6" id="questionnaire" action="/questionnaire" method="post" data-toggle="validator" role="form">
                 <div id="question" style="display:none;" class="question">
                     <p class="display-4">Tell us what cities you would like to visit?</p>
-                    <div class="form-group" style="display:none;">
-                        <input type="text" class="form-control lead" id="emailInput" value="${email}" name="email">
-                    </div>
                     <div class="form-group">
                         <label for="originCityInput" class="lead">Origin City</label>
                         <input type="text" class="form-control lead" id="originCityInput" placeholder="for e.g. London" name="origin_city" required>
@@ -154,9 +151,24 @@
                     </div>
                 </div>
                 <div id="question" style="display:none;" class="question">
-                    <p class="display-4">Lastly, is there anything else you would like to let us know?</p>
+                    <p class="display-4">Is there anything else you would like to let us know?</p>
                     <textarea class="form-control" id="notesInput" name="notes" rows="3" style="padding-bottom: 25px;"></textarea>
                     <br/>
+                </div>
+                <div id="question" style="display:none;" class="question">
+                    <p class="display-4">lastly, your contact details</p>
+                    <div class="form-group">
+                        <label for="nameInput" class="lead">Name</label>
+                        <input type="text" class="form-control lead" id="nameInput" placeholder="John Doe" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneInput" class="lead">Phone </label>
+                        <input type="text" class="form-control lead" id="phoneInput" placeholder="" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput" class="lead">Email </label>
+                        <input type="text" class="form-control lead" id="emailInput" placeholder="" name="email" required>
+                    </div>
                 </div>
                 <div class="form-group">
                     <button type="button" id="prevBtn" class="btn btn-secondary" onClick="nextPrev(-1)" class="lead">Previous</button>
@@ -195,8 +207,6 @@
       x[currentTab].style.display = "none";
       // Increase or decrease the current tab by 1:
       currentTab = currentTab + n;
-      console.log(currentTab);
-      debugger;
       // if you have reached the end of the form... :
       if (currentTab >= x.length) {
         //...the form gets submitted:
@@ -205,7 +215,6 @@
       }
       // Otherwise, display the correct tab:
 
-      console.log(currentTab);
       showTab(currentTab);
     }
 

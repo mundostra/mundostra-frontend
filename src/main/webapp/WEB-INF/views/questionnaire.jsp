@@ -16,7 +16,7 @@
     <spring:url value="/resources/vendor/font-awesome/css/font-awesome.min.css" var="fontAwesomeCss" />
     <spring:url value="/resources/vendor/magnific-popup/magnific-popup.css" var="magnificPopupCss" />
     <spring:url value="/resources/vendor/bootstrap/css/bootstrap.min.css" var="bootstrapCss" />
-    <spring:url value="/resources/css/questionnaire.min.css" var="questionnaireCss"/>
+    <spring:url value="/resources/css/questionnaire.css" var="questionnaireCss"/>
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -70,7 +70,7 @@
 <body>
     <div class="moving-zone" id="question1">
         <div class="popup">
-            <div class="  popup-content">
+            <div class="popup-content">
               <div class="row">
                     <div class="col-sm-6 popup-text">
                       <p>Origin:  <br><input type="text" id="startDatepicker"></p>

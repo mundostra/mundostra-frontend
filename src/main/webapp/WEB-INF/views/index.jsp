@@ -109,7 +109,7 @@
               <p class="text-faded mb-4">Mundostra, Inc. <sup><i>*</i></sup>  is all about making your travel easy and enjoyable. You just need to tell us what your heart desires and pack your bags! We will do all the hard work for you.<br><br>Our mission is to take care of the logistics of your trip: your bookings, personal preferences on stay, food, tours and anything else you need.<br><br>What more? We will be in touch with you as frequently as you want us to - so we can make sure you are in safe hands from the moment you leave your home and return rejuvenated. All we ask from you is to help us know you a little better so we can make your itineraries, 100% customized to your preferences.
               <br><br>
                 </p>
-              <a class="btn btn-light btn-xl js-scroll-trigger" href="signup">Get Started!</a>
+              <a class="btn btn-light btn-xl js-scroll-trigger" href="questionnaire">Get Started!</a>
           </div>
         </div>
       </div>

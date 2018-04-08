@@ -22,6 +22,7 @@
     <link href="${styleCss}" rel="stylesheet">
     <link href="${fontAwesomeCss}" rel="stylesheet">
 
+
 </head>
 <body>
     <div class="container" id="login-box">
@@ -33,13 +34,13 @@
             <div id="signup" class="tab-pane fade in active">
                 <br/>
                 <h1>Sign Up</h1>
-                <form >
+                <form action="/signup">
                     <div class="top-row">
                         <div class="field-wrap">
-                          <input type="text" name="firstname" required autocomplete="off" placeholder="First Name" />
+                          <input type="text" name="first_name" required autocomplete="off" placeholder="First Name" />
                         </div>
                         <div class="field-wrap">
-                          <input type="text" name="lastname" required autocomplete="off" placeholder="Last Name"/>
+                          <input type="text" name="last_name" required autocomplete="off" placeholder="Last Name"/>
                         </div>
                     </div>
                     <div class="field-wrap">
@@ -57,7 +58,7 @@
             <div id="login" class="tab-pane fade">
                 <br/>
                 <h1>Welcome Back!</h1>
-                <form>
+                <form action="/signin">
                     <div class="field-wrap">
                        <input type="email" name="email" required autocomplete="off" placeholder="Email Address"/>
                     </div>
